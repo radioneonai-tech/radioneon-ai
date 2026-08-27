@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Radio Neon | راديو نيون - بث مباشر وموسيقى الذكاء الاصطناعي 24/7</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Radio Neon - راديو نيون: استمع لأحدث مقطوعات وموسيقى الذكاء الاصطناعي لقناة @RadioNeonAi مع بث مباشر متواصل وقوائم تشغيل مخصصة">
+  <meta property="og:title" content="Radio Neon | راديو نيون">
+  <meta property="og:description" content="البث المباشر والموسيقى الحصرية لقناة Radio Neon AI">
+  <meta property="og:image" content="assets/PNG-LOGO.png">
+  <meta property="og:type" content="music.radio_station">
+  <meta name="theme-color" content="#0B0416">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/PNG-LOGO.png">
+
+  <!-- Google Fonts: Playpen Sans Arabic & Readex Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600;700;800&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ambient Neon Background Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- App Wrapper -->
+  <div class="app-container">
+    
+    <!-- ========================================== -->
+    <!-- HEADER / NAVIGATION BAR                    -->
+    <!-- ========================================== -->
+    <header class="main-header">
+      <div class="header-inner container">
+        <!-- Logo & Brand -->
+        <a href="#" class="brand-logo" id="navLogo">
+          <img src="assets/PNG-LOGO.png" alt="Radio Neon Logo" class="logo-img">
+          <div class="brand-text">
+            <span class="brand-title">راديو نيون</span>
+            <span class="brand-sub">Radio Neon AI</span>
+          </div>
+        </a>
+
+        <!-- Main Navigation Tabs -->
+        <nav class="nav-tabs" role="tablist">
+          <button class="tab-btn active" data-tab="tab-tracks" role="tab" aria-selected="true">
+            <i class="fa-solid fa-music"></i>
+            <span data-i18n="navTracks">الأغاني الفردية</span>
+          </button>
+          <button class="tab-btn" data-tab="tab-live" role="tab" aria-selected="false">
+            <span class="live-dot-pulse"></span>
+            <i class="fa-solid fa-tower-broadcast"></i>
+            <span data-i18n="navLive">البث المباشر</span>
+            <span class="badge-live-tag">24/7</span>
+          </button>
+          <button class="tab-btn" data-tab="tab-playlists" role="tab" aria-selected="false">
+            <i class="fa-solid fa-layer-group"></i>
+            <span data-i18n="navPlaylists">قوائم التشغيل</span>
+          </button>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Sync Button -->
+          <button class="action-icon-btn" id="btnSyncChannel" title="مزامنة وتحديث الأغاني من يوتيوب">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <span class="btn-tooltip" data-i18n="syncTooltip">مزامنة القناة</span>
+          </button>
+
+          <!-- Language Switcher -->
+          <button class="lang-toggle-btn" id="btnLangToggle" title="تغيير اللغة / Switch Language">
+            <i class="fa-solid fa-globe"></i>
+            <span id="currentLangLabel">EN</span>
+          </button>
+
+          <!-- User Profile / Auth Button -->
+          <div class="auth-wrapper" id="authWrapper">
+            <button class="auth-btn" id="btnAuthOpen">
+              <i class="fa-solid fa-user-circle"></i>
+              <span id="authBtnText" data-i18n="login">تسجيل الدخول</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT AREA                          -->
+    <!-- ========================================== -->
+    <main class="main-content container">
+
+      <!-- ---------------------------------------- -->
+      <!-- TAB 1: SINGLE TRACKS (الاستماع للأغاني الفردية) -->
+      <!-- ---------------------------------------- -->
+      <section class="tab-pane active" id="tab-tracks">
+        
+        <!-- Hero Featured Banner -->
+        <div class="featured-hero" id="featuredHero">
+          <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-sparkles"></i> <span data-i18n="featuredTrack">المقطوعة المميزة اليوم</span></span>
+            <h1 class="hero-title" id="heroTrackTitle">شجاني - SaddenedMe</h1>
+            <p class="hero-desc" id="heroTrackDesc">مقطوعة إلكترونية حالمة تدمج أنغام النيون الساحرة بالذكاء الاصطناعي.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="btnPlayFeatured">
+                <i class="fa-solid fa-play"></i>
+                <span data-i18n="playNow">استمع الآن</span>
+              </button>
+              <button class="btn btn-glass" id="btnHeroLike">
+                <i class="fa-regular fa-heart"></i>
+                <span id="heroLikeCount">14</span>
+              </button>
+              <button class="btn btn-glass" id="btnHeroShare">
+                <i class="fa-solid fa-share-nodes"></i>
+                <span data-i18n="share">مشاركة</span>
+              </button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="vinyl-disc-wrapper">
+              <div class="vinyl-disc" id="heroVinyl">
+                <img src="assets/PNG-LOGO.png" alt="Cover" class="vinyl-art" id="heroCoverImg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter & Search Bar -->
+        <div class="tracks-toolbar">
+          <div class="search-input-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="trackSearchInput" class="search-input" placeholder="ابحث عن أغنية، اسم، أو تصنيف..." autocomplete="off">
+            <button class="search-clear-btn" id="btnSearchClear" style="display:none;"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+
+          <!-- Category Chips -->
+          <div class="category-chips" id="categoryChips">
+            <button class="chip active" data-tag="all" data-i18n="chipAll">الكل</button>
+            <button class="chip" data-tag="Ambient" data-i18n="chipAmbient">هادئة (Ambient)</button>
+            <button class="chip" data-tag="Synthwave" data-i18n="chipSynth">سينث ويف (Synth)</button>
+            <button class="chip" data-tag="Lofi" data-i18n="chipLofi">لو فاي (Lo-Fi)</button>
+            <button class="chip" data-tag="Oriental" data-i18n="chipOriental">شرقي نيون (Oriental)</button>
+            <button class="chip" data-tag="Beat" data-i18n="chipBeat">إيقاع وحماس (Beats)</button>
+          </div>
+
+          <!-- Sort Dropdown & Layout Mode -->
+          <div class="toolbar-controls">
+            <div class="sort-wrapper">
+              <label for="trackSortSelect" class="sort-label"><i class="fa-solid fa-arrow-down-short-wide"></i></label>
+              <select id="trackSortSelect" class="sort-select">
+                <option value="newest" data-i18n="sortNewest">الأحدث</option>
+                <option value="popular" data-i18n="sortPopular">الأكثر إعجاباً</option>
+                <option value="views" data-i18n="sortViews">الأكثر استماعاً</option>
+                <option value="duration" data-i18n="sortDuration">الأطول مدة</option>
+              </select>
+            </div>
+            <div class="view-toggle">
+              <button class="view-btn active" id="btnViewGrid" title="عرض الشبكة"><i class="fa-solid fa-grip"></i></button>
+              <button class="view-btn" id="btnViewList" title="عرض القائمة"><i class="fa-solid fa-list"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Track List / Grid Container -->
+        <div class="tracks-grid" id="tracksContainer">
+          <div class="loading-spinner-wrapper">
+            <div class="neon-spinner"></div>
+            <p data-i18n="loadingTracks">جاري تحميل المقطوعات الموسيقية...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------- -->
+      <!-- TAB 2: LIVE RADIO STREAM (راديو البث المباشر) -->
+      <!-- ---------------------------------------- -->
+      <section class="tab-pane" id="tab-live">
+        <div class="live-stage-grid">
+          
+          <!-- Live Player Main Center -->
+          <div class="live-player-card">
+            <div class="live-status-header">
+              <div class="live-pill">
+                <span class="live-pulsing-dot"></span>
+                <span class="live-pill-text" data-i18n="liveOnAir">بث مباشر 24/7 ON AIR</span>
+              </div>
+              <div class="listeners-pill">
+                <i class="fa-solid fa-headphones"></i>
+                <span id="liveListenerCount">1,480</span> <span data-i18n="listenersNow">مستمع الآن</span>
+              </div>
+            </div>
+
+            <!-- Canvas Audio Visualizer Stage -->
+            <div class="visualizer-stage">
+              <canvas id="liveVisualizerCanvas" width="600" height="240"></canvas>
+              <div class="live-art-overlay">
+                <div class="live-art-ring" id="liveArtRing">
+                  <img src="assets/PNG-LOGO.png" alt="On Air Cover" id="liveTrackCover" class="live-track-cover">
+                  <button class="live-play-btn" id="btnLiveTogglePlay" title="تشغيل / إيقاف البث المباشر">
+                    <i class="fa-solid fa-play" id="livePlayIcon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Track Info -->
+            <div class="live-track-info">
+              <span class="station-tag">Radio Neon Official Stream</span>
+              <h2 class="live-current-title" id="liveCurrentTitle">نظرة - Glance</h2>
+              <p class="live-current-meta" id="liveCurrentMeta">Radio Neon AI • جاري البث المباشر</p>
+
+              <!-- Live Progress Timeline -->
+              <div class="live-timeline">
+                <span class="time-text" id="liveElapsed">00:00</span>
+                <div class="live-progress-bar">
+                  <div class="live-progress-fill" id="liveProgressFill" style="width: 0%;"></div>
+                </div>
+                <span class="time-text" id="liveTotal">00:00</span>
+              </div>
+
+              <!-- Live Action Buttons -->
+              <div class="live-actions-bar">
+                <button class="btn btn-glass" id="btnLiveLike">
+                  <i class="fa-regular fa-heart" id="liveLikeIcon"></i>
+                  <span id="liveLikeCount">24</span>
+                </button>
+                <button class="btn btn-glass" id="btnLiveShare">
+                  <i class="fa-solid fa-share-nodes"></i>
+                  <span data-i18n="shareStream">مشاركة البث</span>
+                </button>
+                <button class="btn btn-glass" id="btnLiveVisualizerMode" title="تغيير نمط المؤثرات">
+                  <i class="fa-solid fa-sliders"></i>
+                  <span data-i18n="visualizer">المؤثرات</span>
+                </button>
+              </div>
+
+              <!-- Floating Live Emoji Reactions -->
+              <div class="reaction-bar">
+                <span class="reaction-label" data-i18n="sendReaction">تفاعل مباشر:</span>
+                <div class="reaction-buttons">
+                  <button class="reaction-btn" data-emoji="❤️">❤️</button>
+                  <button class="reaction-btn" data-emoji="🔥">🔥</button>
+                  <button class="reaction-btn" data-emoji="🎵">🎵</button>
+                  <button class="reaction-btn" data-emoji="✨">✨</button>
+                  <button class="reaction-btn" data-emoji="👏">👏</button>
+                  <button class="reaction-btn" data-emoji="🚀">🚀</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Sidebar (Up Next Queue & Live Chat) -->
+          <div class="live-sidebar">
+            
+            <!-- Up Next Card -->
+            <div class="sidebar-card">
+              <div class="card-header">
+                <h3 class="card-title"><i class="fa-solid fa-forward-step"></i> <span data-i18n="upNext">التالي في البث</span></h3>
+                <span class="auto-badge" data-i18n="smartLoop">تكرار ذكي 24/7</span>
+              </div>
+              <div class="up-next-list" id="upNextList"></div>
+            </div>
+
+            <!-- Live Chat Card -->
+            <div class="sidebar-card live-chat-card">
+              <div class="card-header">
+                <h3 class="card-title"><i class="fa-regular fa-comments"></i> <span data-i18n="liveChat">شات المستمعين</span></h3>
+                <span class="live-badge-sm">Live</span>
+              </div>
+              <div class="chat-messages-box" id="liveChatBox"></div>
+              <form class="chat-input-form" id="liveChatForm">
+                <input type="text" id="liveChatInput" class="chat-input" placeholder="اكتب رسالة في البث..." maxlength="200" autocomplete="off">
+                <button type="submit" class="chat-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ---------------------------------------- -->
+      <!-- TAB 3: CUSTOM PLAYLISTS (قوائم التشغيل الخاصة) -->
+      <!-- ---------------------------------------- -->
+      <section class="tab-pane" id="tab-playlists">
+        
+        <div class="playlists-header">
+          <div>
+            <h2 class="section-title" data-i18n="myPlaylists">قوائم التشغيل الخاصة بي</h2>
+            <p class="section-sub" data-i18n="playlistsSub">أنشئ ونظّم قوائمك الموسيقية المفضلة واستمع إليها في أي وقت</p>
+          </div>
+          <button class="btn btn-primary" id="btnOpenCreatePlaylist">
+            <i class="fa-solid fa-plus"></i>
+            <span data-i18n="createNewPlaylist">إنشاء قائمة جديدة</span>
+          </button>
+        </div>
+
+        <!-- Playlists Grid -->
+        <div class="playlists-grid" id="playlistsContainer"></div>
+
+        <!-- Playlist Detail View Panel -->
+        <div class="playlist-detail-panel" id="playlistDetailPanel" style="display:none;">
+          <div class="detail-header">
+            <button class="back-btn" id="btnBackToPlaylists"><i class="fa-solid fa-arrow-right"></i> <span data-i18n="backToPlaylists">العودة للقوائم</span></button>
+            <div class="detail-actions">
+              <button class="btn btn-primary btn-sm" id="btnPlayAllPlaylist"><i class="fa-solid fa-play"></i> <span data-i18n="playAll">تشغيل الكل</span></button>
+              <button class="btn btn-danger btn-sm" id="btnDeleteCurrentPlaylist"><i class="fa-regular fa-trash-can"></i></button>
+            </div>
+          </div>
+          <div class="detail-info-row">
+            <div class="detail-cover-box" id="detailCoverBox">
+              <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <div class="detail-meta">
+              <h3 class="detail-title" id="detailTitle">اسم القائمة</h3>
+              <p class="detail-desc" id="detailDesc">وصف القائمة</p>
+              <div class="detail-stats" id="detailStats">0 مقاطع • 00:00 دقيقة</div>
+            </div>
+          </div>
+          <div class="detail-tracks-list" id="detailTracksList"></div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- OFFICIAL FOOTER & SOCIALS                  -->
+    <!-- ========================================== -->
+    <footer class="main-footer">
+      <div class="footer-inner container">
+        <div class="footer-brand">
+          <img src="assets/PNG-LOGO.png" alt="Radio Neon Logo" class="footer-logo">
+          <div>
+            <h4>راديو نيون | Radio Neon AI</h4>
+            <p>أول محطة إذاعية ذكية تبث مقطوعات وأغاني الذكاء الاصطناعي على مدار الساعة.</p>
+          </div>
+        </div>
+
+        <!-- Social Icons matching PNG-INFO.png -->
+        <div class="footer-socials">
+          <span class="socials-handle">@RadioNeon.Ai</span>
+          <div class="social-icons">
+            <a href="https://www.youtube.com/@RadioNeonAi" target="_blank" rel="noopener noreferrer" class="social-link yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://instagram.com/RadioNeon.Ai" target="_blank" rel="noopener noreferrer" class="social-link ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com/@RadioNeon.Ai" target="_blank" rel="noopener noreferrer" class="social-link tt" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com/RadioNeon.Ai" target="_blank" rel="noopener noreferrer" class="social-link fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Radio Neon AI. جميع الحقوق محفوظة. تم التطوير بأحدث تقنيات الويب.</p>
+      </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- PERSISTENT FLOATING MINI-PLAYER            -->
+    <!-- ========================================== -->
+    <div class="floating-mini-player" id="miniPlayer">
+      <div class="player-container">
+        
+        <!-- Track Thumbnail & Title -->
+        <div class="player-track-info" id="playerTrackInfo">
+          <div class="track-thumb-wrapper" id="btnOpenFullscreenPlayer">
+            <img src="assets/PNG-LOGO.png" alt="Cover" class="player-thumb" id="playerThumb">
+            <div class="thumb-hover-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="track-text">
+            <div class="track-title-scroll">
+              <span class="player-title" id="playerTitle">اختر أغنية للبدء</span>
+            </div>
+            <span class="player-artist" id="playerArtist">Radio Neon AI</span>
+          </div>
+          <button class="player-heart-btn" id="playerBtnLike" title="إعجاب">
+            <i class="fa-regular fa-heart" id="playerLikeIcon"></i>
+          </button>
+        </div>
+
+        <!-- Center Controls & Progress Bar -->
+        <div class="player-controls-center">
+          <div class="controls-buttons">
+            <button class="ctrl-btn" id="btnShuffle" title="تشغيل عشوائي"><i class="fa-solid fa-shuffle"></i></button>
+            <button class="ctrl-btn" id="btnPrev" title="السابق"><i class="fa-solid fa-backward-step"></i></button>
+            <button class="ctrl-btn btn-play-main" id="btnPlayPause" title="تشغيل / إيقاف">
+              <i class="fa-solid fa-play" id="mainPlayIcon"></i>
+            </button>
+            <button class="ctrl-btn" id="btnNext" title="التالي"><i class="fa-solid fa-forward-step"></i></button>
+            <button class="ctrl-btn" id="btnRepeat" title="تكرار"><i class="fa-solid fa-repeat"></i></button>
+          </div>
+
+          <!-- Scrubbable Progress Bar -->
+          <div class="progress-container">
+            <span class="time-label" id="currentTimeLabel">0:00</span>
+            <div class="progress-bar-wrapper" id="progressBarWrapper">
+              <div class="progress-buffer-bar" id="progressBufferBar"></div>
+              <div class="progress-fill-bar" id="progressFillBar"></div>
+              <input type="range" class="progress-slider" id="progressSlider" min="0" max="100" value="0" step="0.1">
+            </div>
+            <span class="time-label" id="totalDurationLabel">0:00</span>
+          </div>
+        </div>
+
+        <!-- Right Volume & Extra Controls -->
+        <div class="player-extra-controls">
+          <div class="volume-box">
+            <button class="volume-btn" id="btnVolumeToggle" title="كتم / تشغيل الصوت">
+              <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+            </button>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.01" value="0.85">
+          </div>
+
+          <button class="extra-btn" id="btnToggleQueue" title="قائمة التشغيل الحالية">
+            <i class="fa-solid fa-list-ol"></i>
+          </button>
+
+          <button class="extra-btn" id="btnExpandPlayer" title="تكبير المشغل">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PLAYBACK QUEUE DRAWER -->
+    <div class="queue-drawer" id="queueDrawer">
+      <div class="drawer-header">
+        <h3><i class="fa-solid fa-list-music"></i> <span data-i18n="currentQueue">قائمة التشغيل الحالية</span></h3>
+        <button class="drawer-close-btn" id="btnCloseQueue"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="drawer-content" id="queueListContainer"></div>
+    </div>
+
+    <!-- FULLSCREEN IMMERSIVE PLAYER MODAL -->
+    <div class="fullscreen-player-modal" id="fullscreenModal">
+      <div class="fs-backdrop-blur" id="fsBackdrop"></div>
+      <div class="fs-container">
+        <div class="fs-top-bar">
+          <button class="fs-close-btn" id="btnCloseFullscreen"><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="fs-header-title">
+            <span class="fs-playing-from" data-i18n="nowPlaying">جاري التشغيل من</span>
+            <h4 class="fs-source-name" id="fsSourceName">راديو نيون | Radio Neon AI</h4>
+          </div>
+          <button class="fs-menu-btn" id="btnFsShare"><i class="fa-solid fa-share-nodes"></i></button>
+        </div>
+
+        <div class="fs-center-content">
+          <canvas id="fsVisualizerCanvas" class="fs-canvas" width="800" height="400"></canvas>
+
+          <div class="fs-album-art-wrapper">
+            <div class="fs-art-glow"></div>
+            <img src="assets/PNG-LOGO.png" alt="Cover" class="fs-art-img" id="fsArtImg">
+          </div>
+
+          <div class="fs-track-details">
+            <h1 class="fs-track-title" id="fsTrackTitle">عنوان الأغنية</h1>
+            <p class="fs-track-artist" id="fsTrackArtist">Radio Neon AI</p>
+            <div class="fs-tags" id="fsTrackTags"></div>
+          </div>
+        </div>
+
+        <div class="fs-bottom-controls">
+          <div class="fs-progress-row">
+            <span id="fsCurrentTime">0:00</span>
+            <div class="progress-bar-wrapper fs-bar-wrapper" id="fsProgressBarWrapper">
+              <div class="progress-fill-bar" id="fsProgressFill"></div>
+              <input type="range" class="progress-slider" id="fsProgressSlider" min="0" max="100" value="0" step="0.1">
+            </div>
+            <span id="fsTotalDuration">0:00</span>
+          </div>
+
+          <div class="fs-buttons-row">
+            <button class="fs-btn" id="btnFsShuffle"><i class="fa-solid fa-shuffle"></i></button>
+            <button class="fs-btn" id="btnFsPrev"><i class="fa-solid fa-backward-step"></i></button>
+            <button class="fs-btn fs-btn-play-large" id="btnFsPlayPause"><i class="fa-solid fa-play" id="fsMainPlayIcon"></i></button>
+            <button class="fs-btn" id="btnFsNext"><i class="fa-solid fa-forward-step"></i></button>
+            <button class="fs-btn" id="btnFsRepeat"><i class="fa-solid fa-repeat"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COMMENTS MODAL -->
+    <div class="modal-overlay" id="commentsModalOverlay">
+      <div class="modal-card comments-modal">
+        <div class="modal-header">
+          <h3><i class="fa-regular fa-comment-dots"></i> <span data-i18n="commentsTitle">تعليقات الأغنية</span></h3>
+          <button class="modal-close-btn" id="btnCloseComments"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="comments-track-preview" id="commentsTrackPreview">
+          <img src="assets/PNG-LOGO.png" alt="Cover" class="cmt-preview-thumb" id="cmtPreviewThumb">
+          <div>
+            <h4 id="cmtPreviewTitle">عنوان المقطوعة</h4>
+            <span id="cmtPreviewCount">0 تعليق</span>
+          </div>
+        </div>
+        <div class="comments-list" id="commentsList"></div>
+        <form class="comment-input-row" id="commentForm">
+          <input type="text" id="commentInput" class="comment-input" placeholder="أضف تعليقك اللطيف..." maxlength="300" autocomplete="off" required>
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- SHARE MODAL -->
+    <div class="modal-overlay" id="shareModalOverlay">
+      <div class="modal-card share-modal">
+        <div class="modal-header">
+          <h3><i class="fa-solid fa-share-nodes"></i> <span data-i18n="shareTitle">مشاركة المقطوعة</span></h3>
+          <button class="modal-close-btn" id="btnCloseShare"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="share-content">
+          <p id="shareTrackName" class="share-track-name">اسم الأغنية</p>
+          <div class="share-copy-box">
+            <input type="text" id="shareUrlInput" readonly class="share-url-input">
+            <button class="btn btn-primary btn-sm" id="btnCopyShareUrl"><i class="fa-regular fa-copy"></i> <span data-i18n="copy">نسخ</span></button>
+          </div>
+          <div class="social-share-buttons">
+            <button class="social-share-btn btn-wa" id="shareWhatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+            <button class="social-share-btn btn-tw" id="shareTwitter"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</button>
+            <button class="social-share-btn btn-tg" id="shareTelegram"><i class="fa-brands fa-telegram"></i> Telegram</button>
+            <button class="social-share-btn btn-fb" id="shareFacebook"><i class="fa-brands fa-facebook"></i> Facebook</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CREATE PLAYLIST MODAL -->
+    <div class="modal-overlay" id="createPlaylistModalOverlay">
+      <div class="modal-card create-playlist-modal">
+        <div class="modal-header">
+          <h3><i class="fa-solid fa-folder-plus"></i> <span data-i18n="newPlaylist">إنشاء قائمة تشغيل</span></h3>
+          <button class="modal-close-btn" id="btnCloseCreatePlaylist"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <form id="createPlaylistForm" class="playlist-form">
+          <div class="form-group">
+            <label data-i18n="playlistNameLabel">اسم القائمة:</label>
+            <input type="text" id="playlistNameInput" class="form-input" placeholder="مثال: نيون في الليل، تركيز، استرخاء..." required>
+          </div>
+          <div class="form-group">
+            <label data-i18n="playlistDescLabel">الوصف (اختياري):</label>
+            <textarea id="playlistDescInput" class="form-input textarea" placeholder="وصف قصير للقائمة..."></textarea>
+          </div>
+          <div class="form-group">
+            <label data-i18n="playlistColorLabel">لون السمة:</label>
+            <div class="color-picker-row" id="colorPickerRow">
+              <span class="color-dot active" data-color="#8A05FF" style="background:#8A05FF;"></span>
+              <span class="color-dot" data-color="#00F5A0" style="background:#00F5A0;"></span>
+              <span class="color-dot" data-color="#FF2E93" style="background:#FF2E93;"></span>
+              <span class="color-dot" data-color="#60A5FA" style="background:#60A5FA;"></span>
+              <span class="color-dot" data-color="#FCDA37" style="background:#FCDA37;"></span>
+              <span class="color-dot" data-color="#BF7B1C" style="background:#BF7B1C;"></span>
+            </div>
+          </div>
+          <div class="modal-footer-btns">
+            <button type="button" class="btn btn-glass" id="btnCancelCreatePlaylist" data-i18n="cancel">إلغاء</button>
+            <button type="submit" class="btn btn-primary" data-i18n="create">إنشاء القائمة</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ADD TO PLAYLIST PICKER MODAL -->
+    <div class="modal-overlay" id="addToPlaylistModalOverlay">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3><i class="fa-solid fa-list-check"></i> <span data-i18n="addToPlaylistTitle">إضافة إلى قائمة تشغيل</span></h3>
+          <button class="modal-close-btn" id="btnCloseAddToPlaylist"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="add-to-playlist-content" id="addToPlaylistList"></div>
+      </div>
+    </div>
+
+    <!-- AUTHENTICATION / LOGIN MODAL -->
+    <div class="modal-overlay" id="authModalOverlay">
+      <div class="modal-card auth-modal">
+        <div class="modal-header">
+          <div class="auth-modal-title">
+            <img src="assets/PNG-LOGO.png" alt="Logo" class="auth-logo-sm">
+            <h3 data-i18n="authTitle">حساب راديو نيون</h3>
+          </div>
+          <button class="modal-close-btn" id="btnCloseAuth"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="auth-tabs">
+          <button class="auth-tab-btn active" id="authTabLogin" data-i18n="login">تسجيل الدخول</button>
+          <button class="auth-tab-btn" id="authTabRegister" data-i18n="register">إنشاء حساب جديد</button>
+        </div>
+
+        <!-- Google Sign In -->
+        <div class="google-auth-box">
+          <button class="btn btn-google" id="btnGoogleLogin">
+            <svg class="google-icon" viewBox="0 0 48 48">
+              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/>
+              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+            </svg>
+            <span data-i18n="googleSignIn">المتابعة باستخدام Google / Gmail</span>
+          </button>
+        </div>
+
+        <div class="auth-divider">
+          <span data-i18n="orWithEmail">أو عبر البريد الإلكتروني</span>
+        </div>
+
+        <form id="authForm" class="auth-form">
+          <div class="form-group" id="groupName" style="display:none;">
+            <label data-i18n="nameLabel">الاسم:</label>
+            <input type="text" id="authNameInput" class="form-input" placeholder="اسمك المستعار">
+          </div>
+          <div class="form-group">
+            <label data-i18n="emailLabel">البريد الإلكتروني:</label>
+            <input type="email" id="authEmailInput" class="form-input" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label data-i18n="passwordLabel">كلمة المرور:</label>
+            <input type="password" id="authPasswordInput" class="form-input" placeholder="••••••••" required>
+          </div>
+          <div class="form-error-msg" id="authErrorMsg" style="display:none;"></div>
+          <button type="submit" class="btn btn-primary btn-block" id="btnAuthSubmit" data-i18n="login">تسجيل الدخول</button>
+        </form>
+
+        <div class="user-profile-view" id="userProfileView" style="display:none;">
+          <div class="user-profile-card">
+            <img src="assets/PNG-LOGO.png" alt="Avatar" class="profile-avatar-lg" id="profileAvatar">
+            <h3 id="profileName">اسم المستخدم</h3>
+            <p id="profileEmail">user@example.com</p>
+            <div class="profile-stats-row">
+              <div>
+                <span class="stat-num" id="profileLikesCount">0</span>
+                <span class="stat-lbl" data-i18n="likedTracks">المعجب بها</span>
+              </div>
+              <div>
+                <span class="stat-num" id="profilePlaylistsCount">0</span>
+                <span class="stat-lbl" data-i18n="playlists">قوائم</span>
+              </div>
+            </div>
+            <button class="btn btn-danger btn-block" id="btnLogout" data-i18n="logout">تسجيل الخروج</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SYNC STATUS MODAL -->
+    <div class="modal-overlay" id="syncModalOverlay">
+      <div class="modal-card sync-modal">
+        <div class="modal-header">
+          <h3><i class="fa-solid fa-arrows-rotate fa-spin"></i> <span data-i18n="syncTitle">مزامنة قناة Radio Neon</span></h3>
+          <button class="modal-close-btn" id="btnCloseSyncModal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="sync-modal-body">
+          <p data-i18n="syncingDesc">جاري فحص القناة @RadioNeonAi واستخراج المقطوعات والأغاني الجديدة بصيغة MP3 عالية الجودة...</p>
+          <div class="sync-progress-bar">
+            <div class="sync-progress-fill" id="syncProgressFill"></div>
+          </div>
+          <div class="sync-log-box" id="syncLogBox">
+            <div class="log-line">بدء الاتصال بخادم القناة...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Audio Element -->
+    <audio id="globalAudioPlayer" preload="metadata"></audio>
+
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/api.js"></script>
+  <script src="js/audio-player.js"></script>
+  <script src="js/radio-stream.js"></script>
+  <script src="js/playlists.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
