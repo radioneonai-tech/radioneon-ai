@@ -1,0 +1,359 @@
+{
+  "tracks": [
+    {
+      "id": "UClRR3rJf7c",
+      "videoId": "UClRR3rJf7c",
+      "title": "لمحة - Glance",
+      "titleAr": "لمحة",
+      "titleEn": "Glance",
+      "duration": 345,
+      "durationString": "5:45",
+      "views": 7,
+      "thumbnailUrl": "https://i.ytimg.com/vi/UClRR3rJf7c/hqdefault.jpg",
+      "audioUrl": "/api/audio/UClRR3rJf7c.mp3",
+      "likesCount": 1,
+      "tags": [
+        "Ambient",
+        "Neon Wave",
+        "Oriental"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "9XypKXKnwmc",
+      "videoId": "9XypKXKnwmc",
+      "title": "شجاني - SaddenedMe",
+      "titleAr": "شجاني",
+      "titleEn": "SaddenedMe",
+      "duration": 294,
+      "durationString": "4:54",
+      "views": 33,
+      "thumbnailUrl": "https://i.ytimg.com/vi/9XypKXKnwmc/hqdefault.jpg",
+      "audioUrl": "/api/audio/9XypKXKnwmc.mp3",
+      "likesCount": 14,
+      "tags": [
+        "Lofi",
+        "Emotional",
+        "Synth"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "PtPYtNl4umY",
+      "videoId": "PtPYtNl4umY",
+      "title": "خطوة - Step",
+      "titleAr": "خطوة",
+      "titleEn": "Step",
+      "duration": 219,
+      "durationString": "3:39",
+      "views": 181,
+      "thumbnailUrl": "https://i.ytimg.com/vi/PtPYtNl4umY/hqdefault.jpg",
+      "audioUrl": "/api/audio/PtPYtNl4umY.mp3",
+      "likesCount": 1,
+      "tags": [
+        "Beat",
+        "Energy",
+        "Cyberpunk"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "xmn4J8jYXIQ",
+      "videoId": "xmn4J8jYXIQ",
+      "title": "بوح - Whisper",
+      "titleAr": "بوح",
+      "titleEn": "Whisper",
+      "duration": 230,
+      "durationString": "3:50",
+      "views": 27,
+      "thumbnailUrl": "https://i.ytimg.com/vi/xmn4J8jYXIQ/hqdefault.jpg",
+      "audioUrl": "/api/audio/xmn4J8jYXIQ.mp3",
+      "likesCount": 12,
+      "tags": [
+        "Chill",
+        "Ambient",
+        "Midnight"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "KaaEGJGmkdY",
+      "videoId": "KaaEGJGmkdY",
+      "title": "راكد - Stagnant",
+      "titleAr": "راكد",
+      "titleEn": "Stagnant",
+      "duration": 154,
+      "durationString": "2:34",
+      "views": 20,
+      "thumbnailUrl": "https://i.ytimg.com/vi/KaaEGJGmkdY/hqdefault.jpg",
+      "audioUrl": "/api/audio/KaaEGJGmkdY.mp3",
+      "likesCount": 9,
+      "tags": [
+        "Deep",
+        "Atmospheric"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "BlxP9SfWLiM",
+      "videoId": "BlxP9SfWLiM",
+      "title": "جذبة - Trance",
+      "titleAr": "جذبة",
+      "titleEn": "Trance",
+      "duration": 440,
+      "durationString": "7:20",
+      "views": 1,
+      "thumbnailUrl": "https://i.ytimg.com/vi/BlxP9SfWLiM/hqdefault.jpg",
+      "audioUrl": "/api/audio/BlxP9SfWLiM.mp3",
+      "likesCount": 22,
+      "tags": [
+        "Hypnotic",
+        "Oriental Electronic"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "lJWj5TtyXTA",
+      "videoId": "lJWj5TtyXTA",
+      "title": "لقاء - Meeting",
+      "titleAr": "لقاء",
+      "titleEn": "Meeting",
+      "duration": 358,
+      "durationString": "5:58",
+      "views": 30,
+      "thumbnailUrl": "https://i.ytimg.com/vi/lJWj5TtyXTA/hqdefault.jpg",
+      "audioUrl": "/api/audio/lJWj5TtyXTA.mp3",
+      "likesCount": 16,
+      "tags": [
+        "Dreamy",
+        "Synthwave"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "r07_hBEx58c",
+      "videoId": "r07_hBEx58c",
+      "title": "ياسمين - Jasmine",
+      "titleAr": "ياسمين",
+      "titleEn": "Jasmine",
+      "duration": 215,
+      "durationString": "3:35",
+      "views": 231,
+      "thumbnailUrl": "https://i.ytimg.com/vi/r07_hBEx58c/hqdefault.jpg",
+      "audioUrl": "/api/audio/r07_hBEx58c.mp3",
+      "likesCount": 19,
+      "tags": [
+        "Acoustic & Synth",
+        "Jasmine Bloom"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "LMxtfxLfkUw",
+      "videoId": "LMxtfxLfkUw",
+      "title": "كثبان - Dunes",
+      "titleAr": "كثبان",
+      "titleEn": "Dunes",
+      "duration": 358,
+      "durationString": "5:58",
+      "views": 33,
+      "thumbnailUrl": "https://i.ytimg.com/vi/LMxtfxLfkUw/hqdefault.jpg",
+      "audioUrl": "/api/audio/LMxtfxLfkUw.mp3",
+      "likesCount": 1,
+      "tags": [
+        "Desert Cyber",
+        "Dunes"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "LvqZiOlrrY8",
+      "videoId": "LvqZiOlrrY8",
+      "title": "مضراب - Mudhrab",
+      "titleAr": "مضراب",
+      "titleEn": "Mudhrab",
+      "duration": 369,
+      "durationString": "6:09",
+      "views": 22,
+      "thumbnailUrl": "https://i.ytimg.com/vi/LvqZiOlrrY8/hqdefault.jpg",
+      "audioUrl": "/api/audio/LvqZiOlrrY8.mp3",
+      "likesCount": 11,
+      "tags": [
+        "Rhythm",
+        "Percussion"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "fSwRCrcJl-w",
+      "videoId": "fSwRCrcJl-w",
+      "title": "ديجيتال - Digital",
+      "titleAr": "ديجيتال",
+      "titleEn": "Digital",
+      "duration": 268,
+      "durationString": "4:28",
+      "views": 68,
+      "thumbnailUrl": "https://i.ytimg.com/vi/fSwRCrcJl-w/hqdefault.jpg",
+      "audioUrl": "/api/audio/fSwRCrcJl-w.mp3",
+      "likesCount": 17,
+      "tags": [
+        "Future Beats",
+        "Digital"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "TrYwl0JpitA",
+      "videoId": "TrYwl0JpitA",
+      "title": "تفكر - Reflection",
+      "titleAr": "تفكر",
+      "titleEn": "Reflection",
+      "duration": 390,
+      "durationString": "6:30",
+      "views": 31,
+      "thumbnailUrl": "https://i.ytimg.com/vi/TrYwl0JpitA/hqdefault.jpg",
+      "audioUrl": "/api/audio/TrYwl0JpitA.mp3",
+      "likesCount": 15,
+      "tags": [
+        "Meditation",
+        "Mindful",
+        "Chill"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "cJIPzAzFuzE",
+      "videoId": "cJIPzAzFuzE",
+      "title": "إيقاع - Rhythm",
+      "titleAr": "إيقاع",
+      "titleEn": "Rhythm",
+      "duration": 234,
+      "durationString": "3:54",
+      "views": 34,
+      "thumbnailUrl": "https://i.ytimg.com/vi/cJIPzAzFuzE/hqdefault.jpg",
+      "audioUrl": "/api/audio/cJIPzAzFuzE.mp3",
+      "likesCount": 21,
+      "tags": [
+        "Pulse",
+        "Drum & Bass",
+        "Arabic Flow"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "KzZJKIiiRhI",
+      "videoId": "KzZJKIiiRhI",
+      "title": "ربابة - Rababa",
+      "titleAr": "ربابة",
+      "titleEn": "Rababa",
+      "duration": 423,
+      "durationString": "7:03",
+      "views": 14,
+      "thumbnailUrl": "https://i.ytimg.com/vi/KzZJKIiiRhI/hqdefault.jpg",
+      "audioUrl": "/api/audio/KzZJKIiiRhI.mp3",
+      "likesCount": 13,
+      "tags": [
+        "Traditional Modern",
+        "Rababa",
+        "Neon"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    },
+    {
+      "id": "bt5r0xjekzI",
+      "videoId": "bt5r0xjekzI",
+      "title": "صدى - Echo",
+      "titleAr": "صدى",
+      "titleEn": "Echo",
+      "duration": 245,
+      "durationString": "4:05",
+      "views": 25,
+      "thumbnailUrl": "https://i.ytimg.com/vi/bt5r0xjekzI/hqdefault.jpg",
+      "audioUrl": "/api/audio/bt5r0xjekzI.mp3",
+      "likesCount": 18,
+      "tags": [
+        "Reverb",
+        "Echoes",
+        "Night"
+      ],
+      "publishedAt": "2026-08-27T06:59:56.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_guest_demo",
+      "email": "demo@radioneon.ai",
+      "name": "Radio Neon Fan",
+      "avatar": "assets/PNG-LOGO.png",
+      "createdAt": "2026-08-27T06:59:55.019Z"
+    },
+    {
+      "id": "usr_1787814528048_1uerf3",
+      "email": "neon.listener@gmail.com",
+      "name": "Google User (Neon)",
+      "avatar": "assets/PNG-LOGO.png",
+      "passwordHash": null,
+      "googleId": "google_1787814528045",
+      "createdAt": "2026-08-27T07:08:48.048Z"
+    }
+  ],
+  "playlists": [
+    {
+      "id": "pl_1787814361429_8mavo",
+      "userId": "usr_guest_demo",
+      "name": "موسيقى السهر والتركيز",
+      "description": "أفضل مقطوعات النيون الليلية",
+      "color": "#8A05FF",
+      "tracks": [
+        "PtPYtNl4umY",
+        "9XypKXKnwmc"
+      ],
+      "createdAt": "2026-08-27T07:06:01.429Z",
+      "updatedAt": "2026-08-27T07:06:01.429Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "cmt_1787814361420_dv4ka",
+      "trackId": "PtPYtNl4umY",
+      "userId": "guest",
+      "userName": "مستمع نيون",
+      "userAvatar": "assets/PNG-LOGO.png",
+      "content": "مقطوعة ممتازة جداً وأجواء نيون رائعة! 🔥",
+      "createdAt": "2026-08-27T07:06:01.420Z",
+      "likes": 0
+    }
+  ],
+  "likes": [
+    {
+      "userId": "test_user",
+      "trackId": "PtPYtNl4umY",
+      "createdAt": "2026-08-27T07:06:01.404Z"
+    },
+    {
+      "userId": "usr_guest_demo",
+      "trackId": "UClRR3rJf7c",
+      "createdAt": "2026-08-27T07:07:41.309Z"
+    },
+    {
+      "userId": "usr_1787814528048_1uerf3",
+      "trackId": "LMxtfxLfkUw",
+      "createdAt": "2026-08-27T07:09:06.840Z"
+    }
+  ],
+  "chat": [
+    {
+      "id": "msg_1787814557476_nokm",
+      "userId": "usr_1787814528048_1uerf3",
+      "userName": "Google User (Neon)",
+      "userAvatar": "assets/PNG-LOGO.png",
+      "content": "Hello !!",
+      "timestamp": "2026-08-27T07:09:17.476Z"
+    }
+  ],
+  "syncState": {
+    "lastSyncedAt": "2026-08-27T06:59:56.670Z",
+    "totalTracks": 15,
+    "status": "idle"
+  }
+}
